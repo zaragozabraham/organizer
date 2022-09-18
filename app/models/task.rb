@@ -12,6 +12,11 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
+  belongs_to :owner, class_name: 'User'
+  has_many :participant_users, class_name: 'Participant'
+  has_many :participants, through: :participant_users, source: :user
+
+  validates :participant_users, presence: true
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :description, presence: true
   validate :due_date_validity
