@@ -14,9 +14,10 @@
   = @task.category
 
 .notes-container
-  - @task.notes.each do |n|
-    %p= n.body
-  = simple_form_for Note.new, url: task_notes_path(task_id: @task.id) do |f|
+  .notes
+    - @task.notes.each do |n|
+      = render 'tasks/notes/note.html.haml', note: n
+  = simple_form_for Note.new, url: task_notes_path(task_id: @task.id), remote: true do |f|
     = f.input :body, label: false, as: :string, placeholder: 'Enter your note', input_html: { autocomplete: :off }
 
 = link_to 'Edit', edit_task_path(@task)
