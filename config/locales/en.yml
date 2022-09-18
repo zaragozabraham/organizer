@@ -15,8 +15,12 @@ en:
     new_category: Nueva Categoria
   common:
     back: Back
+  task:
+
   tasks:
     form:
       description: Description
       due_date: Due date
       name: Name
+    errors:
+      invalid_due_date: Invalid due date
