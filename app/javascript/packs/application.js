@@ -8,6 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "vanilla-nested"
+import "bootstrap"
+import "roboto-fontface"
 
 Rails.start()
 Turbolinks.start()

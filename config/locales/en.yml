@@ -9,18 +9,23 @@ en:
         one: Tarea
         others: Tareas
   categories:
+    category: Category
     form:
       description: Description
       name: Name
     new_category: Nueva Categoria
   common:
+    are_you_sure: Are you sure
     back: Back
+    destroy: Destroy
+    edit: Edit
+    show: Show
   task:
-
   tasks:
+    errors:
+      invalid_due_date: Invalid due date
     form:
       description: Description
       due_date: Due date
+      due_time: Due time
       name: Name
-    errors:
-      invalid_due_date: Invalid due date

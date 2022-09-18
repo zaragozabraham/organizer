@@ -9,16 +9,23 @@ es:
         one: Tarea
         others: Tareas
   categories:
+    category: Category
     form:
       description: Descripcion
       name: Nombre
     new_category: Nueva Categoria
   common:
+    are_you_sure: ¿Está seguro?
     back: Atras
+    destroy: Eliminar
+    edit: Editar
+    show: Mostrar
+  task: Task
   tasks:
+    errors:
+      invalid_due_date: La fecha no puede estar en el pasado.
     form:
       description: Descripcion
       due_date: Fecha de fin
+      due_time: Due time
       name: Nombre
-    errors:
-      invalid_due_date: La fecha no puede estar en el pasado.
