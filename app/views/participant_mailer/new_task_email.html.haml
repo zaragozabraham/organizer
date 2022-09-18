@@ -1,0 +1,16 @@
+%h1
+  Hello
+  = @user.email
+  , you have a new task
+%p
+  %b Name
+  = @task.name
+%p
+  %b Description
+  = @task.description
+%p
+  %b Category
+  = @task.category.name
+%p
+  %b Link
+  = link_to @task.code, @task
